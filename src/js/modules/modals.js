@@ -13,7 +13,6 @@ const modals = () => {
                 if (e.target) {
                     e.preventDefault();
                 }
-
                 if (destroy) {
                     item.remove();
                 }
