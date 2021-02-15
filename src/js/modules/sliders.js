@@ -33,14 +33,14 @@ const sliders = (slides, dir, prev, next) => {
 
         prevBtn.addEventListener('click', () => {
             plusSlides(-1);
-            items[slideIndex - 1].classList.remove('slideInLeft');
-            items[slideIndex - 1].classList.add('slideInRight');
+            items[slideIndex - 1].classList.remove('zoomInLeft');
+            items[slideIndex - 1].classList.add('zoomInRight');
         });
 
         nextBtn.addEventListener('click', () => {
             plusSlides(1);
-            items[slideIndex - 1].classList.remove('slideInRight');
-            items[slideIndex - 1].classList.add('slideInLeft');
+            items[slideIndex - 1].classList.remove('zoomInRight');
+            items[slideIndex - 1].classList.add('zoomInLeft');
         });
     } catch(e){}
 
@@ -48,13 +48,13 @@ const sliders = (slides, dir, prev, next) => {
         if (dir === 'vertical') {
             paused = setInterval(function() {
                 plusSlides(1);
-                items[slideIndex - 1].classList.add('slideInDown');
+                items[slideIndex - 1].classList.add('flipInY');
             }, 3000);
         } else {
             paused = setInterval(function() {
                 plusSlides(1);
-                items[slideIndex - 1].classList.remove('slideInRight');
-                items[slideIndex - 1].classList.add('slideInLeft');
+                items[slideIndex - 1].classList.remove('zoomInRight');
+                items[slideIndex - 1].classList.add('zoomInLeft');
             }, 3000);
         }
     }
