@@ -6,6 +6,7 @@ import cheeckTextInputs from './modules/cheeckTextInputs';
 import showMoreStyles from './modules/showMoreStyles';
 import calc from './modules/calc';
 import filter from './modules/filter';
+import picture from './modules/picture';
 
 window.document.addEventListener('DOMContentLoaded', () => {
     "use strict";
@@ -20,4 +21,5 @@ window.document.addEventListener('DOMContentLoaded', () => {
     showMoreStyles('.button-styles', '#styles .row');
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
+    picture('.sizes-block');
 });
