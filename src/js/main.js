@@ -3,6 +3,7 @@ import sliders from './modules/sliders';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import cheeckTextInputs from './modules/cheeckTextInputs';
+import showMoreStyles from './modules/showMoreStyles';
 
 window.document.addEventListener('DOMContentLoaded', () => {
     "use strict";
@@ -14,4 +15,5 @@ window.document.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     cheeckTextInputs('[name="name"]');
     cheeckTextInputs('[name="message"]');
+    showMoreStyles('.button-styles', '#styles .row');
 });
